@@ -39,4 +39,5 @@ export const selector = {
     bookDemo : 'Book a Demo Book a Demo',
     website : 'Visit Website Visit Website',
     contact : 'Contact Us Contact Us',
+    toggle : "//div[@class='css-17tpdod']"
 };
