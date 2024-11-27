@@ -1,0 +1,7 @@
+.env
+csv-to-json.js
+node_modules/
+tests/.DS_Store
+.DS_Store
+/test-results/
+/playwright-report/
