@@ -9,7 +9,7 @@ test("TPT25: Add New Link Type (SAN)", async ({page}) => {
         url: selector.sanSrc
     })
     await iframe2.getByText(selector.linkType).first().click();
-    await iframe2.getByRole(selector.textbox, { name: selector.nameLT }).fill('Custom 2');
+    await iframe2.getByRole(selector.textbox, { name: selector.nameLT }).fill('Supports');
     await iframe2.getByRole(selector.textbox, { name: selector.inward }).fill('Duplicate');
     await iframe2.getByRole(selector.textbox, { name: selector.outward }).fill('Relates to');
     await iframe2.getByRole(selector.button, { name: selector.create }).click();

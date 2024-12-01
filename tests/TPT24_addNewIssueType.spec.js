@@ -9,7 +9,7 @@ test("TPT24: Add New Issue Type (SAN)", async ({page}) => {
         url: selector.sanSrc
     })
     await iframe2.getByText(selector.issueType).first().click();
-    await iframe2.getByRole(selector.textbox, { name: selector.nameIT }).fill('Custom 3');
+    await iframe2.getByRole(selector.textbox, { name: selector.nameIT }).fill('Fixed');
     await iframe2.getByRole(selector.button, { name: selector.create }).click();
 
     await page.pause();
