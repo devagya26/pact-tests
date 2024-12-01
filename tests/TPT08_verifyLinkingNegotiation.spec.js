@@ -11,8 +11,10 @@ test("TPT08: Verify Requirement & Negotiation Linking", async ({page}) => {
     await iframe.locator(selector.pg4).click();
     await iframe.getByText(selector.license).click();
     await page.waitForTimeout(8000);
+    await iframe.locator(selector.toggle).click();
+    await page.waitForTimeout(2000);
     await iframe.getByRole(selector.button, { name: 'Expand row PT-58' }).click();
-
+    
     // console.log('PT-60, whose value is for estimated cost is 5678.546, original cost "547200" and status should be "In Progress"');
     await page.pause();
 })

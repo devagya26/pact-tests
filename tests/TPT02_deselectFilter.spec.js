@@ -13,7 +13,7 @@ test("TPT02: Deselect Filter Dropdown", async ({page}) => {
     await iframe.getByText(selector.done).click();
     await page.waitForTimeout(2000);
 
-    await iframe.getByText(selector.selDev).click();
+    await iframe.getByText(selector.selDev).first().click();
     await iframe.locator(selector.label).filter({ hasText: 'Done' }).locator('span').nth(1).click();
     await iframe.getByRole(selector.button, { name: selector.closeFilter }).click();
     await page.waitForTimeout(2000);
